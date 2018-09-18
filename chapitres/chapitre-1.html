@@ -9,6 +9,34 @@
 
     <p>Aliquam erat volutpat. Morbi gravida velit nisl. Duis facilisis aliquam nisi, ut auctor metus. Curabitur ex diam, mollis at odio sit amet, posuere hendrerit massa. Cras mi nisl, gravida quis orci sed, consequat sagittis est. Mauris ante magna, sagittis sit amet maximus nec, accumsan non urna. Aenean eget ipsum pretium, pretium tortor non, aliquet elit. Phasellus tempor quam ante, id scelerisque felis commodo et. Nulla vehicula sodales sapien vel scelerisque. Duis vestibulum a lacus in euismod. Etiam tincidunt elementum mattis. Nulla iaculis pellentesque consectetur.</p>
 
+ <div id="app">
+        <carousel-3d>
+          <!-- Pour ajouter une photo à cette galerie il faut ajouter une
+          balise <slide> contenant une <img>. Chaque slide doit avoir
+          un index different. -->
+          <slide :index="0">
+            <img src="https://st2.depositphotos.com/4272673/9475/i/950/depositphotos_94759794-stock-photo-cute-octopus-cartoon.jpg" />
+          </slide>
+          <slide :index="1">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSN-3q_TNz1W-xDkLh_hhxC_4x7rtmQsE_5Tkav67eVLe1pz2eMsQ" />
+          </slide>
+          <slide :index="2">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSkleO2qm7qz_luWTbrgAX8AZ_xq4L2VAIP20WPaEvOjE-XkrybnA" />
+          </slide>
+          <slide :index="3">
+            <center>Le saviez-vous ? Les pieuvres et les poulpes, c'est plus ou moins la même chose... <a href="https://fr.wikipedia.org/wiki/Pieuvre">Find out more here !</a></center>
+          </slide>
+        </carousel-3d>
+      </div>
+    </div>
+
+        <!-- Les fichiers javascript qui permettent au carousel de fonctionner. Ces
+    fichier JS sont référencés avec des chemins relatifs. Si vous devez les référencer
+    dans un fichier depuis un autre dossier, pensez à mettre à jour ces chemins. -->
+    <script src="../vendors/vue.min.js"></script>
+    <script src="../vendors/vue-carousel-3d.min.js"></script>
+    <script src="../gallery.js"></script>
+
     <ul>
       <li>
         <a href="chapitre-2.html">Chapitre suivant</a>
